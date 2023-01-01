@@ -8,7 +8,7 @@ using Xeptions;
 
 namespace OtripleS.Web.Api.Models.Users.Exceptions
 {
-    public class FailedUserServiceException : Xeption
+    public class FailedUserServiceException : Exception
     {
         public FailedUserServiceException(Exception innerException)
             : base(message: "Failed user service error occurred.", innerException)
